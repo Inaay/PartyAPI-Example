@@ -1,0 +1,6 @@
+name: ExamplePartyAPI
+main: Inaayat\ExampleParty\Main
+api: 4.0.0
+version: 1.0.0
+author: Inaayat
+description: An Example PartyAPI plugin
