@@ -49,16 +49,16 @@ class PartyCommand extends Command {
                     $partyManager->createParty($sender);
                     $sender->sendMessage(TextFormat::GREEN . "Party created");
                     break;
-		case "help":
-		    $create = "/party create - create a party\n";
-		    $invite = "/party invite (name) - invite a player to the party\n";
-		    $kick = "/party kick (name) - kick a player from the party\n";
-		    $accept = "/party accept (name) - Accept a player party invite\n";
-		    $leave = "/party leave - Leave the party\n";
-		    $list = "/party list - Show the party list\n";
-		    $show = "/party show - Show all parties\n";
-		    $sender->sendMessage(TextFormat::RED . $create.$invite.$kick.$accept.$leave.$list.$show);
-		    break;
+				case "help":
+					$create = "/party create - create a party\n";
+					$invite = "/party invite (name) - invite a player to the party\n";
+					$kick = "/party kick (name) - kick a player from the party\n";
+					$accept = "/party accept (name) - Accept a player party invite\n";
+					$leave = "/party leave - Leave the party\n";
+					$list = "/party list - Show the party list\n";
+					$show = "/party show - Show all parties\n";
+					$sender->sendMessage(TextFormat::RED . $create.$invite.$kick.$accept.$leave.$list.$show);
+					break;
                 case "invite":
                     if ($party === null) {
                         $sender->sendMessage(TextFormat::RED . "You are not in a party. Use /party create to make one!");
