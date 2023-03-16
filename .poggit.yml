@@ -1,0 +1,10 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Inaay/PartyAPI-Example
+build-by-default: true
+branches:
+- main
+projects:
+  PartyAPI-Example:
+    path: ""
+    lint:
+      phpstan: false
+...
