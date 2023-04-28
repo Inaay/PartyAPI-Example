@@ -18,7 +18,6 @@ class PartyCommand extends Command {
         $this->plugin = $plugin;
         parent::__construct("party");
         $this->setDescription("Party Command");
-        $this->setPermission(DefaultPermissions::ROOT_USER);
     }
 
     public function execute(CommandSender $sender, string $commandLabel, array $args) {
